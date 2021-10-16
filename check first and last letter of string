@@ -1,0 +1,22 @@
+// check the first letter and last letter of the string if they are equal then print the true or if they are not wqual then print the false
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    string s;
+    cout<<"enter the string:";
+    getline(cin,s);
+    int n=s.length();
+    if(s[0]==s[n-1])
+    {
+        cout<<"true";
+    }
+    else
+    {
+        cout<<"false";
+    }
+
+    return 0;
+}
