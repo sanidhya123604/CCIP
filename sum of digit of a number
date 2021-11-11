@@ -1,0 +1,33 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n,r,sum=0,result=0,rem;
+    cout<<"enter the number:";
+    cin>>n;
+    while(n>0)
+    {
+        r=n%10;
+        sum=sum+r;
+        n=n/10;
+    }
+     int num=sum;
+    while(num>0)
+    {
+        rem=num%10;
+        result=(result*10)+rem;
+        num=num/10;
+    }
+    if(sum==result)
+    {
+        cout<<"true";
+    }
+    else
+    {
+        cout<<"false";
+    }
+
+    return 0;
+}
