@@ -1,0 +1,33 @@
+#include <iostream>
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int a,b,n;
+    cout<<"enter the value of a:";
+    cin>>a;
+    cout<<"enter the value of b";
+    cin>>b;
+    cout<<"enter the value of n:";
+    cin>>n;
+    int result= pow(a,b);
+    //cout<<result;
+    //cout<<result<<"\n";
+    int count=0,r;
+    while(result>0)
+    {
+        count=count+1;
+        r=result%10;
+        if(n==count)
+        {
+            cout<<r;
+        }
+        result=result/10;
+        
+    }
+    
+
+    return 0;
+}
